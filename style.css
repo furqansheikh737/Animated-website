@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 2vw;
+    position: relative;
+    background-color: #efeae3;
+}
+
+nav {
+    width: 100%;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.nav-part2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #605f5f89;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+.nav-part2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.nav-part2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.nav-part2 h4 a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.nav-part2 h4:hover a {
+    color: white;
+}
+
+.center {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+
+.left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+.right h4 {
+    font-size: 10rem;
+    text-align: end;
+    line-height: 8vw;
+}
+
+video {
+    border-radius: 30px;
+    position: relative;
+    margin-top: 4vw;
+    width: 100%;
+}
+
+.hero-shape {
+    height: 35vw;
+    width: 35vw;
+    position: absolute;
+    right: 0;
+    top: 75vh;
+}
+
+.hero-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fe320a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+
+}
+
+.hero-2 {
+    height: 30vw;
+    width: 30vw;
+    background-color: #fe320a;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+.hero-3 {
+    height: 30vw;
+    width: 30vw;
+    background-color: #fe320a;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(20px);
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(30%, 10%);
+    }
+
+    to {
+        transform: translate(-3%, -3%);
+
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(40%, -10%);
+    }
+
+    to {
+        transform: translate(-10%, 10%);
+
+    }
+}
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0;
+}
+
+.moving-text h1 {
+    font-size: 9vw;
+    display: inline-block;
+}
+
+.moving-text-con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.gola {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #fe320a;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
