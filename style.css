@@ -278,23 +278,29 @@ video {
 }
 
 .page3{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
+    padding: 4vw 0;
 }
 
+/* .page3 .elem-conatiner{
+    height: 100%;
+    width: 100%;
+} */
+
 .page3 .elem{
-    height: 150px;
+    height: 130px;
     width: 100%;
     display: flex;
     align-items: center;
     border-bottom: 0.5px solid rgb(160, 159, 159);
     position: relative;
-    padding: 0 4vw;
+    padding: 0 2vw;
     overflow: hidden;
 }
 
 .elem h2{
-    font-size: 4vw;
+    font-size: 3.6vw;
     position: relative;
     z-index: 9;
 }
@@ -311,9 +317,97 @@ video {
     position: absolute;
     left: 0;
     top: -100%;
-    transition: all ease 0.3s;
+    transition: all ease 0.2s;
 }
 
 .elem:hover .overlay{
     top: 0;
+}
+
+.fixed-img{
+    height: 65vh;
+    width: 53vh;
+    border-radius: 18px;
+    top: 27%;
+    left: 50%;
+    z-index: 99;
+    position: fixed;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+button{
+    padding: 10px 20px;
+    border: 1px solid #605f5f89;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    margin: 2vw;
+    background-color: transparent;
+}
+
+.page4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.page4-left{
+    height: 100%;
+    width: 45%;
+    background-color: black;
+    margin-left: 30px;
+    border: none;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    text-align: center;
+}
+
+.page4-right{
+    height: 100%;
+    width: 55%;
+    background-color: rgb(245, 236, 236);
+    margin-right: 30px;
+    border: none;
+    border-radius: 18px;
+}
+
+.page4-left h1{
+    color: white;
+    font-size: 4.25em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.page4-left p{
+    color: white;
+    font-size: 0.7em;
+    padding: 0 180px;
+    font-weight: 100;
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
 }
