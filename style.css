@@ -18,15 +18,19 @@ body {
     position: relative;
     background-color: #efeae3;
 }
-.main{
+
+.main {
     z-index: 10;
     position: relative;
 }
+
 nav {
     width: 100%;
     padding: 2vw 0;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 100;
     justify-content: space-between;
 }
 
@@ -34,6 +38,10 @@ nav {
     display: flex;
     align-items: center;
     gap: 1vw;
+}
+
+nav h3 {
+    display: none;
 }
 
 .nav-part2 h4 {
@@ -315,7 +323,12 @@ video {
 
 .elem h5 {
     font-size: 1vw;
+    padding-left: 0.5vw;
     font-weight: lighter;
+}
+
+.dot {
+    height: 1vh;
 }
 
 .elem .overlay {
@@ -336,9 +349,9 @@ video {
     height: 65vh;
     width: 53vh;
     border-radius: 18px;
-    top: 27%;
+    top: 19%;
     left: 50%;
-    z-index: 9;
+    z-index: 99;
     position: fixed;
     display: none;
     background-size: cover;
@@ -427,7 +440,7 @@ button {
 }
 
 .page5 {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     background-color: #efeae3;
 }
@@ -436,11 +449,11 @@ button {
     height: 100vh;
     width: 100%;
     background-color: transparent;
-    
+
 }
 
 
-.footer{
+.footer {
     position: fixed;
     z-index: 9;
     height: 100vh;
@@ -453,11 +466,12 @@ button {
     flex-direction: column;
 }
 
-.footer h1{
+.footer h1 {
     font-size: 21vw;
+    text-align: center;
 }
 
-.footer-div{
+.footer-div {
     height: 20vh;
     width: 100%;
     display: flex;
@@ -466,16 +480,16 @@ button {
     padding: 0 10vh;
 }
 
-.footer-div .bottom-heading1 h1{
+.footer-div .bottom-heading1 h1 {
     font-size: 2vw;
     line-height: 1.5;
 }
 
-.footer-div .bottom-heading2{
+.footer-div .bottom-heading2 {
     width: 26%;
 }
 
-.footer-div .bottom-heading2 input{
+.footer-div .bottom-heading2 input {
     width: 100%;
     height: 4vh;
     padding: 15px;
@@ -484,13 +498,13 @@ button {
     font-size: 1.2rem;
 }
 
-.footer-bottom{
+.footer-bottom {
     border-top: 1px solid #dadada;
     height: 10vh;
     width: 100%;
 }
 
-.footer-bottom{
+.footer-bottom {
     height: 10vh;
     width: 100%;
     display: flex;
@@ -499,6 +513,88 @@ button {
     padding: 2vh;
 }
 
-.footer-bottom h1{
+.footer-bottom h1 {
     font-size: 1rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 80%;
+    padding: 5vw 6vw;
+}
+
+.swiper-slide {
+    border-left: 1px solid #cac5c5;
+    width: 30%;
+    padding-left: 1.3vw;
+}
+
+.swiper-img {
+    height: 10vh;
+    width: 10vw;
+}
+
+.swiper-slide p {
+    font-size: 1vw;
+    width: 20vw;
+    font-weight: li;
+}
+
+.page5 h5 {
+    font-weight: 100;
+    padding-left: 6vw;
+    padding-top: 8vw;
+}
+
+.full-scr{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000a4;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.5s;
+}
+
+.full-scr-div1{
+    height: 50%;    
+    width: 100%;
+    background-color: #efeae3;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+@media (max-width : 600px) {
+    .page1 {
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0 0vw;
+    }
+
+    nav {
+        padding: 8vw 5vw; 
+        background-color: #efeae3;
+    }
+
+    nav img {
+        height: 9vh;
+        transition: all ease 0.2s;
+    }
+
+    .nav-part2 {
+        display: none;
+    }
+    
+    nav h3 {
+        display: block;
+        border: 1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        padding: 2vw 5vw;
+        font-weight: 200;
+        padding-left: 10vw;
+    }
+
+
 }
